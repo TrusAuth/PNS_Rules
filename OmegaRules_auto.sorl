@@ -220,3 +220,7 @@
 *.wikipedia.org
 *.mega.nz
 *.gmail.com
+*.googleapis.com
+translate.googleapis.com
+*.googleapis.cn
+*.google.hk
