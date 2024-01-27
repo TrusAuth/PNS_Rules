@@ -11,6 +11,17 @@ var FindProxyForURL = function(init, profiles) {
 }("+auto", {
     "+auto": function(url, host, scheme) {
         "use strict";
+        if (/(?:^|\.)openstreetmap\.org$/.test(host)) return "+proxy";
+        if (/(?:^|\.)openmaptiles\.org$/.test(host)) return "+proxy";
+        if (/(?:^|\.)gstatic\.com$/.test(host)) return "+proxy";
+        if (/(?:^|\.)vercel\.app$/.test(host)) return "+proxy";
+        if (/(?:^|\.)spartanhost\.net$/.test(host)) return "+proxy";
+        if (/(?:^|\.)spartanhost\.org$/.test(host)) return "+proxy";
+        if (/(?:^|\.)livechatinc\.com$/.test(host)) return "+proxy";
+        if (/(?:^|\.)google-analytics\.com$/.test(host)) return "+proxy";
+        if (/(?:^|\.)cdn-telegram\.org$/.test(host)) return "+proxy";
+        if (/(?:^|\.)cloudflare\.com$/.test(host)) return "+proxy";
+        if (/(?:^|\.)regery\.com$/.test(host)) return "+proxy";
         if (/(?:^|\.)pkgs\.org$/.test(host)) return "+proxy";
         if (/(?:^|\.)gitlab\.com$/.test(host)) return "+proxy";
         if (/(?:^|\.)v2ray\.com$/.test(host)) return "+proxy";
@@ -18,7 +29,6 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)wp\.com$/.test(host)) return "+proxy";
         if (/(?:^|\.)racknerd\.com$/.test(host)) return "+proxy";
         if (/(?:^|\.)speedtest\.net$/.test(host)) return "+proxy";
-        if (/(?:^|\.)gstatic\.com$/.test(host)) return "+proxy";
         if (/(?:^|\.)element\.io$/.test(host)) return "+proxy";
         if (/(?:^|\.)matrix\.org$/.test(host)) return "+proxy";
         if (/(?:^|\.)singpost\.com$/.test(host)) return "+proxy";
@@ -53,7 +63,6 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)andbeyond\.media$/.test(host)) return "+proxy";
         if (/(?:^|\.)outbrainimg\.com$/.test(host)) return "+proxy";
         if (/(?:^|\.)apkmirror\.com$/.test(host)) return "+proxy";
-        if (/(?:^|\.)google-analytics\.com$/.test(host)) return "+proxy";
         if (/(?:^|\.)google\.com$/.test(host)) return "+proxy";
         if (/(?:^|\.)ytimg\.com$/.test(host)) return "+proxy";
         if (/(?:^|\.)youtube\.com$/.test(host)) return "+proxy";
@@ -62,7 +71,6 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)objects\.githubusercontent\.com$/.test(host)) return "+proxy";
         if (/(?:^|\.)daumcdn\.net$/.test(host)) return "+proxy";
         if (/(?:^|\.)camo\.githubusercontent\.com$/.test(host)) return "+proxy";
-        if (/(?:^|\.)cloudflare\.com$/.test(host)) return "DIRECT";
         if (/(?:^|\.)g\.co$/.test(host)) return "+proxy";
         if (/(?:^|\.)oaistatic\.com$/.test(host)) return "+proxy";
         if (/(?:^|\.)tawk\.to$/.test(host)) return "+proxy";
@@ -232,6 +240,7 @@ var FindProxyForURL = function(init, profiles) {
         if (/^translate\.googleapis\.com$/.test(host)) return "+proxy";
         if (/(?:^|\.)googleapis\.cn$/.test(host)) return "+proxy";
         if (/(?:^|\.)google\.hk$/.test(host)) return "+proxy";
+        if (/(?:^|\.).*\.googleapis\.com$/.test(host)) return "+proxy";
         return "DIRECT";
     },
     "+proxy": function(url, host, scheme) {
