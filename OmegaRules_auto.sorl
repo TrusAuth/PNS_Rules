@@ -1,19 +1,35 @@
 [SwitchyOmega Conditions]
 ; Require: SwitchyOmega >= 2.3.2
-; Date: 2024/1/27
+; Date: 2024/2/2
 ; Usage: https://github.com/FelisCatus/SwitchyOmega/wiki/RuleListUsage
 
+*.poperblocker.com
+*.manizx.com
+*.anti-ad.win
+*.gfw.report
+*.doubleclick.net
+*.google-analytics.com
+*.googletagmanager.com
+*.regery.com
+*.regery.net
+*.mxpnl.com
+*.easydmarc.com
+*.hs-scripts.com
+*.private-user-images.githubusercontent.com
+*.camo.githubusercontent.com
+*.githubassets.com
+*.user-images.githubusercontent.com
+!*.spartanhost.net
+*.spamhaus.org
+*.ssllabs.com
 *.openstreetmap.org
 *.openmaptiles.org
 *.gstatic.com
 *.vercel.app
-*.spartanhost.net
 *.spartanhost.org
 *.livechatinc.com
-*.google-analytics.com
 *.cdn-telegram.org
 *.cloudflare.com
-*.regery.com
 *.pkgs.org
 *.gitlab.com
 *.v2ray.com
@@ -59,10 +75,8 @@
 *.ytimg.com
 *.youtube.com
 *.avatars.githubusercontent.com
-*.githubassets.com
 *.objects.githubusercontent.com
 *.daumcdn.net
-*.camo.githubusercontent.com
 *.g.co
 *.oaistatic.com
 *.tawk.to
@@ -217,7 +231,6 @@
 *.versus.io
 *.telegram.me
 *.t.me
-*.doubleclick.net
 *.googleusercontent.com
 *.googlesource.com
 *.imgur.com
