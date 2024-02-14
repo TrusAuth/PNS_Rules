@@ -1,8 +1,13 @@
 [SwitchyOmega Conditions]
 ; Require: SwitchyOmega >= 2.3.2
-; Date: 2024/2/2
+; Author: TrusAuth (Levi Marvin)
+; Date: 2024/2/14
 ; Usage: https://github.com/FelisCatus/SwitchyOmega/wiki/RuleListUsage
 
+*.ycombinator.com
+*.git-scm.com
+*.fosshub.com
+*.bitcomet.com
 *.poperblocker.com
 *.manizx.com
 *.anti-ad.win

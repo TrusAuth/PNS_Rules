@@ -11,6 +11,10 @@ var FindProxyForURL = function(init, profiles) {
 }("+auto", {
     "+auto": function(url, host, scheme) {
         "use strict";
+        if (/(?:^|\.)ycombinator\.com$/.test(host)) return "+proxy";
+        if (/(?:^|\.)git-scm\.com$/.test(host)) return "+proxy";
+        if (/(?:^|\.)fosshub\.com$/.test(host)) return "+proxy";
+        if (/(?:^|\.)bitcomet\.com$/.test(host)) return "+proxy";
         if (/(?:^|\.)poperblocker\.com$/.test(host)) return "+proxy";
         if (/(?:^|\.)manizx\.com$/.test(host)) return "+proxy";
         if (/(?:^|\.)anti-ad\.win$/.test(host)) return "+proxy";
