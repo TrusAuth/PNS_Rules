@@ -1,7 +1,7 @@
 [SwitchyOmega Conditions]
 ; Require: SwitchyOmega >= 2.3.2
 ; Author: TrusAuth (Levi Marvin)
-; Date: 2024/2/14
+; Date: 2024/3/17
 ; Usage: https://github.com/FelisCatus/SwitchyOmega/wiki/RuleListUsage
 
 *.page.link
