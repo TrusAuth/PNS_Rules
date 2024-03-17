@@ -159,7 +159,7 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)camo\.githubusercontent\.com$/.test(host)) return "+proxy";
         if (/(?:^|\.)githubassets\.com$/.test(host)) return "+proxy";
         if (/(?:^|\.)user-images\.githubusercontent\.com$/.test(host)) return "+proxy";
-        if (/(?:^|\.)spartanhost\.net$/.test(host)) return "DIRECT";
+        if (/(?:^|\.)spartanhost\.net$/.test(host)) return "+proxy";
         if (/(?:^|\.)spamhaus\.org$/.test(host)) return "+proxy";
         if (/(?:^|\.)ssllabs\.com$/.test(host)) return "+proxy";
         if (/(?:^|\.)openstreetmap\.org$/.test(host)) return "+proxy";
@@ -336,7 +336,6 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)ubembed\.com$/.test(host)) return "+proxy";
         if (/(?:^|\.)aiuys\.com$/.test(host)) return "+proxy";
         if (/(?:^|\.)telegram\.org$/.test(host)) return "+proxy";
-        if (/(?:^|\.)syddos\.com$/.test(host)) return "DIRECT";
         if (/(?:^|\.)who\.is$/.test(host)) return "+proxy";
         if (/(?:^|\.)mega\.co\.nz$/.test(host)) return "+proxy";
         if (/(?:^|\.)fastpanel\.direct$/.test(host)) return "+proxy";

@@ -152,7 +152,7 @@
 *.camo.githubusercontent.com
 *.githubassets.com
 *.user-images.githubusercontent.com
-!*.spartanhost.net
+*.spartanhost.net
 *.spamhaus.org
 *.ssllabs.com
 *.openstreetmap.org
@@ -329,7 +329,6 @@
 *.ubembed.com
 *.aiuys.com
 *.telegram.org
-!*.syddos.com
 *.who.is
 *.mega.co.nz
 *.fastpanel.direct
